@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+
+    width: 600px;
+    /* border: 1px dashed black; */
+    margin: 50px auto;
+   background-color: white;
+}
+
+.post-header {
+    /* background-color: grey; */
+    /* border: 1px dashed black; */
+    grid-column: 1/13;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-header > div {
+    margin: 15px 8px;
+}
+
+.Lh {
+    display: flex;
+}
+
+.post-img {
+    /* background-color: aquamarine; */
+    /* border: 1px dashed black; */
+    grid-column: 1/13;
+    grid-row: 2/8;
+
+    background-image: url("https://picsum.photos/600");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.post-content {
+    /* background-color: yellow; */
+    /* border: 1px dashed black; */
+    grid-column: 1/13;
+    grid-row: 8/12;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    /* background-color: blue; */
+    height: 20%;  
+    margin-bottom: 5px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+div > i {
+    margin:  0 5px;
+}
+
+div > p { 
+    margin:  0 8px; 
+}
+
+div > i:hover {
+    cursor:pointer;
+}
+
+
+.description {
+    /* background-color: red; */
+    height: 80%;
+}
+
+
